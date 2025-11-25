@@ -24,6 +24,13 @@ The two pointers technique is a common algorithmic pattern used to solve array a
 - **Time Complexity**: O(n)
 - **Space Complexity**: O(1)
 
+### 3. Remove Duplicates from Sorted Array
+- **File**: [3_remove_duplicates.py](file:///Users/svenkatesh/personal_projects/python-pills/two_pointers/3_remove_duplicates.py)
+- **Pattern**: Same Direction (Fast and Slow Pointers)
+- **Description**: Remove duplicates from a sorted array in-place and return the new length
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
 ---
 
 ## Additional Resources
