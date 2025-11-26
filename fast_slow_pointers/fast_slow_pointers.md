@@ -18,6 +18,13 @@ The fast and slow pointers technique (also known as Floyd's Tortoise and Hare al
 - **Time Complexity**: O(n)
 - **Space Complexity**: O(1)
 
+### 2. Happy Number
+- **File**: [2_happy_number.py](file:///Users/svenkatesh/personal_projects/python-pills/fast_slow_pointers/2_happy_number.py)
+- **Pattern**: Fast and Slow Pointers (Cycle Detection)
+- **Description**: Determine if a number is happy by detecting cycles in the sum of squared digits sequence
+- **Time Complexity**: O(log n)
+- **Space Complexity**: O(1)
+
 ---
 
 ## Additional Resources
