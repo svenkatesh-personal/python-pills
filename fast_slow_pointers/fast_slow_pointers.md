@@ -25,6 +25,51 @@ The fast and slow pointers technique (also known as Floyd's Tortoise and Hare al
 - **Time Complexity**: O(log n)
 - **Space Complexity**: O(1)
 
+### 3. Find Cycle Start in Linked List
+- **File**: [3_cycle_start.py](file:///Users/svenkatesh/personal_projects/python-pills/fast_slow_pointers/3_cycle_start.py)
+- **Pattern**: Fast and Slow Pointers (Floyd's Cycle Detection)
+- **Description**: Detect if a cycle exists in a linked list and find the node where the cycle begins
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
+#### Understanding Cycles in Linked Lists
+
+**What is a Cycle?**
+
+A cycle occurs when a node in the linked list points back to an earlier node instead of ending with NULL, creating an infinite loop.
+
+**Normal Linked List (No Cycle):**
+```
+1 → 2 → 3 → 4 → 5 → NULL
+```
+
+**Linked List WITH a Cycle:**
+```
+1 → 2 → 3 → 4 → 5
+        ↑         ↓
+        ←←←←←←←←←←
+```
+Here, node 5 points back to node 3, creating a loop. The **cycle start** is node 3.
+
+**Real-World Analogy:**
+
+Think of it like a circular running track:
+- You start at the entrance (node 1)
+- You run straight for a bit (nodes 1 → 2)
+- Then you enter the circular track (node 3 is where the circle starts)
+- You keep running in circles (3 → 4 → 5 → back to 3)
+
+**The Algorithm (Two Phases):**
+
+1. **Phase 1 - Detect Cycle**: Use fast and slow pointers. If they meet, a cycle exists.
+2. **Phase 2 - Find Start**: Move one pointer to head, keep other at meeting point. Move both one step at a time. Where they meet is the cycle start.
+
+**Why is this useful?**
+- Detecting infinite loops in data structures
+- Finding bugs where circular references exist
+- Memory leak detection
+- Graph algorithms that need to detect cycles
+
 ---
 
 ## Additional Resources
